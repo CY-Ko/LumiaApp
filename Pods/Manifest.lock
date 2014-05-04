@@ -1,0 +1,23 @@
+PODS:
+  - FlickrKit (1.0.2)
+  - FMDB (2.2):
+    - FMDB/standard
+  - FMDB/common (2.2)
+  - FMDB/standard (2.2):
+    - FMDB/common
+  - GPUImage (0.1.2)
+  - objectiveflickr (2.0.4)
+
+DEPENDENCIES:
+  - FlickrKit (~> 1.0.2)
+  - FMDB (~> 2.2)
+  - GPUImage (~> 0.1.2)
+  - objectiveflickr
+
+SPEC CHECKSUMS:
+  FlickrKit: b096e8995b2e830c302f4a2c03e87242d5f9f63a
+  FMDB: 97472cfacf0d9e445e915704fb43b4b142799c36
+  GPUImage: 007145faa0e27f1ddbcab93e07f026c9776e2fa2
+  objectiveflickr: a0fc71147e128f8bca92ac4d13da004873bd7e6b
+
+COCOAPODS: 0.29.0

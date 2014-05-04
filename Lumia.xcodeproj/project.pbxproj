@@ -7,20 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A38EBB9F99344529AC520F0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 948A0764CC0746E894E0B268 /* libPods.a */; };
 		D794D0F118A67FDD0051DC7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D794D0F018A67FDD0051DC7E /* Foundation.framework */; };
 		D794D0F318A67FDD0051DC7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D794D0F218A67FDD0051DC7E /* CoreGraphics.framework */; };
 		D794D0F518A67FDD0051DC7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D794D0F418A67FDD0051DC7E /* UIKit.framework */; };
 		D794D0FB18A67FDD0051DC7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D794D0F918A67FDD0051DC7E /* InfoPlist.strings */; };
 		D794D0FD18A67FDD0051DC7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D794D0FC18A67FDD0051DC7E /* main.m */; };
 		D794D10118A67FDD0051DC7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D794D10018A67FDD0051DC7E /* AppDelegate.m */; };
-		D794D10418A67FDD0051DC7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D794D10218A67FDD0051DC7E /* Main.storyboard */; };
-		D794D10718A67FDD0051DC7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D794D10618A67FDD0051DC7E /* ViewController.m */; };
 		D794D10918A67FDD0051DC7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D794D10818A67FDD0051DC7E /* Images.xcassets */; };
 		D794D11018A67FDD0051DC7E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D794D10F18A67FDD0051DC7E /* XCTest.framework */; };
 		D794D11118A67FDD0051DC7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D794D0F018A67FDD0051DC7E /* Foundation.framework */; };
 		D794D11218A67FDD0051DC7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D794D0F418A67FDD0051DC7E /* UIKit.framework */; };
 		D794D11A18A67FDD0051DC7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D794D11818A67FDD0051DC7E /* InfoPlist.strings */; };
 		D794D11C18A67FDD0051DC7E /* LumiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D794D11B18A67FDD0051DC7E /* LumiaTests.m */; };
+		D794D12F18A7FDEC0051DC7E /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D794D12E18A7FDEC0051DC7E /* PhotoViewController.m */; };
+		D794D13618A7FE140051DC7E /* GPS_test.m in Sources */ = {isa = PBXBuildFile; fileRef = D794D13118A7FE140051DC7E /* GPS_test.m */; };
+		D794D13718A7FE140051DC7E /* MBXMapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D794D13318A7FE140051DC7E /* MBXMapKit.m */; };
+		D794D13818A7FE140051DC7E /* GetWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = D794D13518A7FE140051DC7E /* GetWeather.m */; };
+		D7AC56F118C23CAF00290B50 /* IndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AC56EF18C23CAF00290B50 /* IndexView.m */; };
+		D7AC56F218C23CAF00290B50 /* IndexView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7AC56F018C23CAF00290B50 /* IndexView.xib */; };
+		D7FFF60B18C248B400EDB466 /* FKAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FFF60918C248B400EDB466 /* FKAuthViewController.m */; };
+		D7FFF60C18C248B400EDB466 /* FKAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7FFF60A18C248B400EDB466 /* FKAuthViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		948A0764CC0746E894E0B268 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D794D0ED18A67FDD0051DC7E /* Lumia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lumia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D794D0F018A67FDD0051DC7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D794D0F218A67FDD0051DC7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,15 +52,29 @@
 		D794D0FE18A67FDD0051DC7E /* Lumia-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lumia-Prefix.pch"; sourceTree = "<group>"; };
 		D794D0FF18A67FDD0051DC7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D794D10018A67FDD0051DC7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D794D10318A67FDD0051DC7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D794D10518A67FDD0051DC7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D794D10618A67FDD0051DC7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D794D10818A67FDD0051DC7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D794D10E18A67FDD0051DC7E /* LumiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LumiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D794D10F18A67FDD0051DC7E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D794D11718A67FDD0051DC7E /* LumiaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LumiaTests-Info.plist"; sourceTree = "<group>"; };
 		D794D11918A67FDD0051DC7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D794D11B18A67FDD0051DC7E /* LumiaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LumiaTests.m; sourceTree = "<group>"; };
+		D794D12D18A7FDEC0051DC7E /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		D794D12E18A7FDEC0051DC7E /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		D794D13018A7FE140051DC7E /* GPS_test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPS_test.h; sourceTree = "<group>"; };
+		D794D13118A7FE140051DC7E /* GPS_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPS_test.m; sourceTree = "<group>"; };
+		D794D13218A7FE140051DC7E /* MBXMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBXMapKit.h; sourceTree = "<group>"; };
+		D794D13318A7FE140051DC7E /* MBXMapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBXMapKit.m; sourceTree = "<group>"; };
+		D794D13418A7FE140051DC7E /* GetWeather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetWeather.h; sourceTree = "<group>"; };
+		D794D13518A7FE140051DC7E /* GetWeather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetWeather.m; sourceTree = "<group>"; };
+		D7AC56EE18C23CAF00290B50 /* IndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexView.h; sourceTree = "<group>"; };
+		D7AC56EF18C23CAF00290B50 /* IndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexView.m; sourceTree = "<group>"; };
+		D7AC56F018C23CAF00290B50 /* IndexView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexView.xib; sourceTree = "<group>"; };
+		D7AC56F318C23FC900290B50 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D7FFF60818C248B400EDB466 /* FKAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKAuthViewController.h; sourceTree = "<group>"; };
+		D7FFF60918C248B400EDB466 /* FKAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKAuthViewController.m; sourceTree = "<group>"; };
+		D7FFF60A18C248B400EDB466 /* FKAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FKAuthViewController.xib; sourceTree = "<group>"; };
+		D7FFF60E18C7E8F400EDB466 /* SampleAPIKey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleAPIKey.h; sourceTree = "<group>"; };
+		FD3F79BF32494BEFBF0A6423 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +85,7 @@
 				D794D0F318A67FDD0051DC7E /* CoreGraphics.framework in Frameworks */,
 				D794D0F518A67FDD0051DC7E /* UIKit.framework in Frameworks */,
 				D794D0F118A67FDD0051DC7E /* Foundation.framework in Frameworks */,
+				4A38EBB9F99344529AC520F0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +109,7 @@
 				D794D11518A67FDD0051DC7E /* LumiaTests */,
 				D794D0EF18A67FDD0051DC7E /* Frameworks */,
 				D794D0EE18A67FDD0051DC7E /* Products */,
+				FD3F79BF32494BEFBF0A6423 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +125,12 @@
 		D794D0EF18A67FDD0051DC7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7AC56F318C23FC900290B50 /* SenTestingKit.framework */,
 				D794D0F018A67FDD0051DC7E /* Foundation.framework */,
 				D794D0F218A67FDD0051DC7E /* CoreGraphics.framework */,
 				D794D0F418A67FDD0051DC7E /* UIKit.framework */,
 				D794D10F18A67FDD0051DC7E /* XCTest.framework */,
+				948A0764CC0746E894E0B268 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +138,12 @@
 		D794D0F618A67FDD0051DC7E /* Lumia */ = {
 			isa = PBXGroup;
 			children = (
+				D7FFF60E18C7E8F400EDB466 /* SampleAPIKey.h */,
 				D794D0FF18A67FDD0051DC7E /* AppDelegate.h */,
 				D794D10018A67FDD0051DC7E /* AppDelegate.m */,
-				D794D10218A67FDD0051DC7E /* Main.storyboard */,
-				D794D10518A67FDD0051DC7E /* ViewController.h */,
-				D794D10618A67FDD0051DC7E /* ViewController.m */,
+				D7AC56ED18C23C1E00290B50 /* GPUImage */,
+				D794D13918A7FE1A0051DC7E /* GPS_related */,
+				D7FFF60718C2489100EDB466 /* FlickrLogin */,
 				D794D10818A67FDD0051DC7E /* Images.xcassets */,
 				D794D0F718A67FDD0051DC7E /* Supporting Files */,
 			);
@@ -152,6 +179,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D794D13918A7FE1A0051DC7E /* GPS_related */ = {
+			isa = PBXGroup;
+			children = (
+				D794D13018A7FE140051DC7E /* GPS_test.h */,
+				D794D13118A7FE140051DC7E /* GPS_test.m */,
+				D794D13218A7FE140051DC7E /* MBXMapKit.h */,
+				D794D13318A7FE140051DC7E /* MBXMapKit.m */,
+				D794D13418A7FE140051DC7E /* GetWeather.h */,
+				D794D13518A7FE140051DC7E /* GetWeather.m */,
+			);
+			name = GPS_related;
+			sourceTree = "<group>";
+		};
+		D7AC56ED18C23C1E00290B50 /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				D794D12D18A7FDEC0051DC7E /* PhotoViewController.h */,
+				D794D12E18A7FDEC0051DC7E /* PhotoViewController.m */,
+			);
+			name = GPUImage;
+			sourceTree = "<group>";
+		};
+		D7FFF60718C2489100EDB466 /* FlickrLogin */ = {
+			isa = PBXGroup;
+			children = (
+				D7AC56EE18C23CAF00290B50 /* IndexView.h */,
+				D7AC56EF18C23CAF00290B50 /* IndexView.m */,
+				D7AC56F018C23CAF00290B50 /* IndexView.xib */,
+				D7FFF60818C248B400EDB466 /* FKAuthViewController.h */,
+				D7FFF60918C248B400EDB466 /* FKAuthViewController.m */,
+				D7FFF60A18C248B400EDB466 /* FKAuthViewController.xib */,
+			);
+			name = FlickrLogin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D794D11F18A67FDD0051DC7E /* Build configuration list for PBXNativeTarget "Lumia" */;
 			buildPhases = (
+				3037E3F2E45046AAB2E23CBA /* Check Pods Manifest.lock */,
 				D794D0E918A67FDD0051DC7E /* Sources */,
 				D794D0EA18A67FDD0051DC7E /* Frameworks */,
 				D794D0EB18A67FDD0051DC7E /* Resources */,
+				A355A64F8837457180B3B0F2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,9 +292,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7AC56F218C23CAF00290B50 /* IndexView.xib in Resources */,
 				D794D10918A67FDD0051DC7E /* Images.xcassets in Resources */,
 				D794D0FB18A67FDD0051DC7E /* InfoPlist.strings in Resources */,
-				D794D10418A67FDD0051DC7E /* Main.storyboard in Resources */,
+				D7FFF60C18C248B400EDB466 /* FKAuthViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +309,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3037E3F2E45046AAB2E23CBA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A355A64F8837457180B3B0F2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D794D0E918A67FDD0051DC7E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D794D10718A67FDD0051DC7E /* ViewController.m in Sources */,
+				D794D13718A7FE140051DC7E /* MBXMapKit.m in Sources */,
+				D794D12F18A7FDEC0051DC7E /* PhotoViewController.m in Sources */,
 				D794D10118A67FDD0051DC7E /* AppDelegate.m in Sources */,
+				D7FFF60B18C248B400EDB466 /* FKAuthViewController.m in Sources */,
+				D7AC56F118C23CAF00290B50 /* IndexView.m in Sources */,
+				D794D13618A7FE140051DC7E /* GPS_test.m in Sources */,
 				D794D0FD18A67FDD0051DC7E /* main.m in Sources */,
+				D794D13818A7FE140051DC7E /* GetWeather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,14 +383,6 @@
 				D794D0FA18A67FDD0051DC7E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D794D10218A67FDD0051DC7E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D794D10318A67FDD0051DC7E /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		D794D11818A67FDD0051DC7E /* InfoPlist.strings */ = {
@@ -375,11 +470,21 @@
 		};
 		D794D12018A67FDD0051DC7E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3F79BF32494BEFBF0A6423 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lumia/Lumia-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/FMDB\"",
+					"\"${PODS_ROOT}/Headers/GPUImage\"",
+				);
 				INFOPLIST_FILE = "Lumia/Lumia-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -388,11 +493,21 @@
 		};
 		D794D12118A67FDD0051DC7E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3F79BF32494BEFBF0A6423 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Lumia/Lumia-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/FMDB\"",
+					"\"${PODS_ROOT}/Headers/GPUImage\"",
+				);
 				INFOPLIST_FILE = "Lumia/Lumia-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -460,6 +575,7 @@
 				D794D12118A67FDD0051DC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D794D12218A67FDD0051DC7E /* Build configuration list for PBXNativeTarget "LumiaTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +584,7 @@
 				D794D12418A67FDD0051DC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

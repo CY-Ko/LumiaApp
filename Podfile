@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+pod 'FMDB', '~> 2.2'
+pod 'GPUImage', '~> 0.1.2'
+pod 'FlickrKit', '~> 1.0.2'
+pod 'objectiveflickr'

@@ -5,18 +5,33 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
+	<string>Lumia</string>
+	<key>CFBundleDisplayName</key>
+	<string>Lumia</string>
 	<key>CFBundleIdentifier</key>
 	<string>PhotoFan.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleName</key>
+	<string>Lumia</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
-	<string>BNDL</string>
+	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>PhotoFan.Lumia</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>Lumia</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
