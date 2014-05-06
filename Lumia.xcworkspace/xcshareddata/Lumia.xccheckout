@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>102DC9FD-7EB7-4341-9CA0-61827287AD75</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Lumia</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D4CBC145-43A4-4C02-B7A3-87F648711C18</key>
+		<string>https://github.com/CY-Ko/LumiaApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lumia.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D4CBC145-43A4-4C02-B7A3-87F648711C18</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CY-Ko/LumiaApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D4CBC145-43A4-4C02-B7A3-87F648711C18</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D4CBC145-43A4-4C02-B7A3-87F648711C18</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Lumia</string>
+		</dict>
+	</array>
+</dict>
+</plist>

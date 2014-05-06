@@ -8,6 +8,7 @@
             <connections>
                 <outlet property="authButton" destination="3Ib-hO-6n4" id="bf2-fa-oU3"/>
                 <outlet property="authLabel" destination="0Xh-fK-dGy" id="Mnh-h8-e15"/>
+                <outlet property="progress" destination="dwG-9J-Xkj" id="IMy-A3-2TE"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -46,6 +47,9 @@
                     <state key="normal" title="CameraRow">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="cameraRollButtonPressed:" destination="-1" eventType="touchUpInside" id="ZEW-s9-NLp"/>
+                    </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xh-fK-dGy">
                     <rect key="frame" x="15" y="60" width="293" height="21"/>
@@ -54,6 +58,10 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dwG-9J-Xkj">
+                    <rect key="frame" x="20" y="447" width="280" height="2"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </progressView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>

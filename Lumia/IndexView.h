@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "QBImagePickerController.h"
 
-@interface IndexView : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate>{
+@interface IndexView : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate, QBImagePickerControllerDelegate>{
     CLLocationManager *locationManager;
     NSTimeInterval locationManagerStartTimestamp;
     UILabel *singleLineLabel;
@@ -23,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *progress;
 @property (weak, nonatomic) IBOutlet UILabel *progressLabel;
 - (IBAction)authButtonPressed:(id)sender;
+- (IBAction)cameraRollButtonPressed:(id)sender;
 @end
 
 

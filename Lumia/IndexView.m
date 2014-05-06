@@ -15,6 +15,7 @@
 @property (nonatomic, retain) NSString *userID;
 @property (nonatomic, retain) FKDUNetworkOperation *completeAuthOp;
 @property (nonatomic, retain) FKDUNetworkOperation *checkAuthOp;
+@property (nonatomic, retain) FKImageUploadNetworkOperation *uploadOp;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (nonatomic, retain) NSString * dbPath;
@@ -395,7 +396,90 @@ NSUserDefaults *standardDefaults;
     [self.view addSubview:insertGps];
     [self.view addSubview:queryGpsData_One];
 }
+#pragma mark - Image Upload Related
+- (IBAction) cameraRollButtonPressed:(id)sender {
+	QBImagePickerController *imagePickerController = [[QBImagePickerController alloc] init];
+    imagePickerController.delegate = self;
+    imagePickerController.allowsMultipleSelection = YES;
+    imagePickerController.minimumNumberOfSelection = 1;
+    imagePickerController.maximumNumberOfSelection = 6;
+    [self.navigationController pushViewController:imagePickerController animated:YES];
+}
+- (void)dismissImagePickerController
+{
+    if (self.presentedViewController) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    } else {
+        [self.navigationController popToViewController:self animated:YES];
+    }
+}
 
+#pragma mark - QBImagePickerControllerDelegate
+
+- (void)imagePickerController:(QBImagePickerController *)imagePickerController didSelectAsset:(ALAsset *)asset
+{
+    NSLog(@"*** imagePickerController:didSelectAsset:");
+    NSLog(@"%@", asset);
+    
+    [self dismissImagePickerController];
+}
+
+- (void)imagePickerController:(QBImagePickerController *)imagePickerController didSelectAssets:(NSArray *)assets
+{
+    NSLog(@"*** imagePickerController:didSelectAssets:");
+    NSLog(@"%@", assets);
+    NSLog(@"%@",[assets objectAtIndex: 0]);
+    //-----想要parse 單純URL出來，下列為測試碼，待測試
+    UIImage * imagePicked;
+    for (int i = 0; i < assets.count; i++) {
+        ALAssetRepresentation *rep = [[assets objectAtIndex: i] defaultRepresentation];
+        imagePicked  = [UIImage imageWithCGImage:[rep fullResolutionImage]];
+    }
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 175, 175)];
+    imageView.image = imagePicked;
+    [self dismissImagePickerController];
+    [self.view addSubview:imageView];
+    
+    
+    //------- upload related
+    
+    NSDictionary *uploadArgs = @{@"title": @"自己的照片自己照", @"description": @"自己的App自己寫", @"is_public": @"1", @"is_friend": @"0", @"is_family": @"0", @"hidden": @"2"};
+    
+    self.progress.progress = 0.0;
+	self.uploadOp =  [[FlickrKit sharedFlickrKit] uploadImage:imagePicked args:uploadArgs completion:^(NSString *imageID, NSError *error) {
+		dispatch_async(dispatch_get_main_queue(), ^{
+			if (error) {
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+				[alert show];
+			} else {
+				NSString *msg = [NSString stringWithFormat:@"Uploaded image ID %@", imageID];
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Done" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+				[alert show];
+			}
+            [self.uploadOp removeObserver:self forKeyPath:@"uploadProgress" context:NULL];
+        });
+	}];
+    [self.uploadOp addObserver:self forKeyPath:@"uploadProgress" options:NSKeyValueObservingOptionNew context:NULL];
+    
+	//[self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+- (void)imagePickerControllerDidCancel:(QBImagePickerController *)imagePickerController
+{
+    NSLog(@"*** imagePickerControllerDidCancel:");
+    
+    [self dismissImagePickerController];
+}
+#pragma mark - Progress KVO
+
+- (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CGFloat progress = [[change objectForKey:NSKeyValueChangeNewKey] floatValue];
+        self.progress.progress = progress;
+        //[super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    });
+}
 
 
 @end
